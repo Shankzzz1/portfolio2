@@ -78,14 +78,7 @@ const socialLinks: SocialLink[] = [
 ];
 
 const quickActions = [
-  {
-    id: '1',
-    title: 'Schedule a Call',
-    description: 'Book a 30-minute consultation',
-    icon: <Calendar className="w-5 h-5" />,
-    url: 'https://calendly.com/johndoe',
-    primary: true
-  },
+  
   {
     id: '2',
     title: 'Download Resume',
@@ -121,7 +114,7 @@ export default function ContactSection() {
   };
 
   return (
-    <section className="w-full max-w-6xl mx-auto p-6">
+    <section id='contact' className="w-full max-w-6xl mx-auto p-6">
       <div className="mb-8">
         <h2 className="text-3xl font-bold text-white mb-2 flex items-center gap-3">
           <MessageCircle className="w-8 h-8 text-gray-400" />
@@ -272,8 +265,8 @@ export default function ContactSection() {
                     variant={action.primary ? "default" : "outline"}
                     className={`w-full justify-start h-auto p-4 ${
                       action.primary 
-                        ? "bg-gray-700 hover:bg-gray-600 text-white" 
-                        : "border-gray-600 text-gray-300 hover:bg-gray-800"
+                        ? "bg-gray-700 hover:bg-gray-600 " 
+                        : "border-gray-600 text-black hover:bg-gray-800 hover:text-white "
                     }`}
                   >
                     <div className="flex items-center gap-3 w-full">
@@ -320,7 +313,7 @@ export default function ContactSection() {
                 <Button 
                   variant="outline" 
                   size="sm" 
-                  className="border-gray-600 text-gray-300 hover:bg-gray-800"
+                  className="border-gray-600 text-black hover:bg-gray-800 hover:text-white"
                   asChild
                 >
                   <a href={`mailto:${contactInfo.email}`}>

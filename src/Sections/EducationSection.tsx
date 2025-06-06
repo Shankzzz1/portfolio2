@@ -75,7 +75,7 @@ const educationData: Education[] = [
 
 export default function EducationSection() {
   return (
-    <section className="w-full max-w-4xl mx-auto p-6">
+    <section id='education' className="w-full max-w-4xl mx-auto p-6">
       <div className="mb-8">
         <h2 className="text-3xl font-bold text-white mb-2 flex items-center gap-3">
           <GraduationCap className="w-8 h-8 text-gray-400" />

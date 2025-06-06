@@ -18,7 +18,7 @@ interface SkillCategory {
 const skillsWithLevels: Skill[] = [
   { name: 'TypeScript', level: 95, category: 'Frontend' },
   { name: 'React', level: 90, category: 'Frontend' },
-  { name: 'Next.js', level: 85, category: 'Frontend' },
+  { name: 'Django', level: 85, category: 'Frontend' },
   { name: 'Node.js', level: 88, category: 'Backend' },
   { name: 'Python', level: 82, category: 'Backend' },
   { name: 'PostgreSQL', level: 80, category: 'Database' },
@@ -32,7 +32,7 @@ const skillCategories: SkillCategory[] = [
     icon: <Globe className="w-5 h-5" />,
     skills: [
       'React', 'TypeScript', 'Next.js', 'Vue.js', 'Tailwind CSS', 
-      'SCSS', 'HTML5', 'CSS3', 'JavaScript ES6+', 'Vite', 'Webpack'
+       'HTML5', 'CSS3', 'JavaScript ES6+', 'Vite', 'Webpack'
     ]
   },
   {
@@ -40,31 +40,30 @@ const skillCategories: SkillCategory[] = [
     icon: <Server className="w-5 h-5" />,
     skills: [
       'Node.js', 'Express.js', 'Python', 'Django', 'FastAPI', 
-      'REST APIs', 'GraphQL', 'Microservices', 'Socket.io'
+      'REST APIs', 'GraphQL', 'Socket.io'
     ]
   },
   {
     title: 'Database & Storage',
     icon: <Database className="w-5 h-5" />,
     skills: [
-      'PostgreSQL', 'MongoDB', 'Redis', 'MySQL', 'Prisma', 
-      'Mongoose', 'SQL', 'NoSQL', 'Database Design'
+      'PostgreSQL', 'MongoDB', 'MySQL', 'Prisma', 
+      'Mongoose', 'SQL', 'NoSQL'
     ]
   },
   {
     title: 'Mobile Development',
     icon: <Smartphone className="w-5 h-5" />,
     skills: [
-      'React Native', 'Expo', 'Flutter', 'iOS Development', 
-      'Android Development', 'Mobile UI/UX'
+      'Android Development'
     ]
   },
   {
     title: 'DevOps & Tools',
     icon: <GitBranch className="w-5 h-5" />,
     skills: [
-      'Git', 'GitHub Actions', 'Docker', 'AWS', 'Vercel', 
-      'Netlify', 'CI/CD', 'Linux', 'Nginx', 'Jest', 'Testing'
+      'Git', 'GitHub Actions', 'AWS', 'Vercel', 
+       'Linux', 'Nginx', 'Testing'
     ]
   },
   {
@@ -72,14 +71,14 @@ const skillCategories: SkillCategory[] = [
     icon: <Code className="w-5 h-5" />,
     skills: [
       'TypeScript', 'JavaScript', 'Python', 'Java', 'C++', 
-      'Go', 'Rust', 'PHP', 'Dart'
+       'PHP', 'C', 
     ]
   }
 ];
 
 export default function SkillsSection() {
   return (
-    <section className="w-full max-w-6xl mx-auto p-6">
+    <section id='skills' className="w-full max-w-6xl mx-auto p-6">
       <div className="mb-8">
         <h2 className="text-3xl font-bold text-white mb-2 flex items-center gap-3">
           <Code className="w-8 h-8 text-gray-400" />

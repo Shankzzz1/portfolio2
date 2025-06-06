@@ -17,103 +17,46 @@ interface Experience {
 }
 
 const experienceData: Experience[] = [
+  
   {
-    id: '1',
-    position: 'Full Stack Developer',
-    company: 'Intellicuria Pvt. Ltd.',
-    location: 'Remote',
-    startDate: 'Jan 2023',
-    endDate: 'Present',
-    type: 'Internship',
-    description: 'Leading development of scalable web applications and mentoring junior developers in modern React and Node.js technologies.',
-    responsibilities: [
-      'Architected and developed 5+ high-performance web applications using React, TypeScript, and Node.js',
-      'Led a team of 4 developers, conducting code reviews and establishing best practices',
-      'Collaborated with product managers and designers to deliver user-centric solutions',
-      'Implemented CI/CD pipelines reducing deployment time by 60%',
-      'Optimized application performance resulting in 40% faster load times'
+    "id": "1",
+    "position": "Full Stack Developer Intern",
+    "company": "Intellicuria Private Limited",
+    "location": "Remote",
+    "startDate": "Sept 2024",
+    "endDate": "Present",
+    "type": "Internship",
+    "description": "Working on WhatsApp chatbot development and backend systems to support healthcare services.",
+    "responsibilities": [
+      "Developed WhatsApp Chatbot to handle patient registration and manage medical history",
+      "Contributed to backend development using TypeScript and Node.js"
     ],
-    achievements: [
-      'Promoted to Senior Developer within 18 months',
-      'Delivered projects 25% faster than estimated timelines',
-      'Reduced bug reports by 50% through comprehensive testing strategies',
-      'Mentored 6 junior developers with 100% retention rate'
-    ],
-    technologies: ['React', 'TypeScript', 'Node.js', 'PostgreSQL', 'AWS', 'Docker', 'GraphQL']
-  },
-  {
-    id: '2',
-    position: 'Full Stack Developer',
-    company: 'InnovateLab',
-    location: 'Austin, TX',
-    startDate: 'Jun 2021',
-    endDate: 'Dec 2022',
-    type: 'Full-time',
-    description: 'Developed and maintained multiple client projects while contributing to internal tools and establishing development workflows.',
-    responsibilities: [
-      'Built responsive web applications for 10+ clients across various industries',
-      'Developed RESTful APIs and integrated third-party services',
-      'Collaborated in agile development cycles with cross-functional teams',
-      'Maintained and enhanced existing codebases with modern practices',
-      'Participated in client meetings to gather requirements and provide technical insights'
-    ],
-    achievements: [
-      'Successfully delivered 15+ projects with 98% client satisfaction',
-      'Reduced development time by 30% through reusable component libraries',
-      'Implemented automated testing increasing code coverage to 85%',
-      'Won "Developer of the Month" award 3 times'
-    ],
-    technologies: ['React', 'Next.js', 'Express.js', 'MongoDB', 'Tailwind CSS', 'Jest', 'Git']
-  },
-  {
-    id: '3',
-    position: 'Frontend Developer',
-    company: 'StartupXYZ',
-    location: 'Remote',
-    startDate: 'Feb 2020',
-    endDate: 'May 2021',
-    type: 'Contract',
-    description: 'Specialized in creating modern, responsive user interfaces and improving user experience across multiple products.',
-    responsibilities: [
-      'Developed pixel-perfect UI components using React and modern CSS',
-      'Collaborated with UX/UI designers to implement design systems',
-      'Optimized applications for performance and accessibility',
-      'Integrated frontend applications with backend APIs',
-      'Conducted user testing sessions and implemented feedback'
-    ],
-    achievements: [
-      'Improved user engagement by 45% through UI/UX enhancements',
-      'Built a component library used across 5 different products',
-      'Achieved 100% accessibility compliance (WCAG 2.1)',
-      'Reduced bounce rate by 35% through performance optimizations'
-    ],
-    technologies: ['React', 'JavaScript', 'SCSS', 'Webpack', 'REST APIs', 'Figma']
-  },
-  {
-    id: '4',
-    position: 'Junior Web Developer',
-    company: 'WebSolutions Inc',
-    location: 'New York, NY',
-    startDate: 'Aug 2019',
-    endDate: 'Jan 2020',
-    type: 'Internship',
-    description: 'Started my professional journey learning modern web development practices and contributing to real-world projects.',
-    responsibilities: [
-      'Assisted in developing responsive websites using HTML, CSS, and JavaScript',
-      'Participated in daily standups and sprint planning meetings',
-      'Fixed bugs and implemented minor features under senior developer guidance',
-      'Learned version control with Git and collaborative development practices',
-      'Contributed to documentation and code maintenance tasks'
-    ],
-    achievements: [
-      'Successfully completed 6-month internship program',
+    "achievements": ['Successfully completed 6-month internship program',
       'Contributed to 3 major client projects',
-      'Received excellent performance review and job offer',
-      'Quickly adapted to professional development environment'
+      'Received excellent performance review',
+      'Quickly adapted to professional development environment'],
+    "technologies": ["TypeScript", "Node.js", "WhatsApp API"]
+  },
+  {
+    "id": "2",
+    "position": "Intern",
+    "company": "Chaya Enterprises",
+    "location": "Nashik, India",
+    "startDate": "June 2022",
+    "endDate": "August 2022",
+    "type": "Internship",
+    "description": "Gained hands-on experience in backend development and team collaboration.",
+    "responsibilities": [
+      "Developed backend services using Django and Django Rest Framework",
+      "Assisted in developing interactive web features",
+      "Worked on improving backend performance"
     ],
-    technologies: ['HTML5', 'CSS3', 'JavaScript', 'jQuery', 'Bootstrap', 'Git']
+    "achievements": [],
+    "technologies": ["Django", "Django Rest Framework", "Python"]
   }
 ];
+
+
 
 export default function ExperienceSection() {
   return (

@@ -2,13 +2,19 @@ import { Card, CardContent, CardHeader, CardTitle } from '@/components/ui/card';
 import { Badge } from '@/components/ui/badge';
 import { Button } from '@/components/ui/button';
 import { FolderOpen, ExternalLink, Github, Calendar, Users, Star } from 'lucide-react';
+import Goggin from "@/Images/Goggin.png"
+import introlink from "@/Images/Introlink.png"
+import comsa from "@/Images/comsa.png"
+import portfolio from "@/Images/portfolio.png"
+import Bidweb from "@/Images/Bidweb.png"
+import cashflow from "@/Images/cashflow.png"
 
 interface Project {
   id: string;
   title: string;
   description: string;
   longDescription: string;
-  image: string;
+  image: any;
   technologies: string[];
   category: string;
   status: 'Completed' | 'In Progress' | 'Maintenance';
@@ -29,134 +35,146 @@ interface Project {
 
 const projectsData: Project[] = [
   {
-    id: '1',
-    title: 'E-Commerce Platform',
-    description: 'Full-stack e-commerce solution with advanced features like real-time inventory, payment processing, and admin dashboard.',
-    longDescription: 'A comprehensive e-commerce platform built with modern technologies. Features include user authentication, product catalog, shopping cart, payment integration with Stripe, order management, and an admin dashboard for inventory management.',
-    image: 'https://images.unsplash.com/photo-1556742049-0cfed4f6a45d?w=400&h=200&fit=crop',
-    technologies: ['React', 'TypeScript', 'Node.js', 'PostgreSQL', 'Stripe API', 'Tailwind CSS', 'AWS'],
-    category: 'Full Stack',
-    status: 'Completed',
-    featured: true,
-    links: {
-      live: 'https://ecommerce-demo.com',
-      github: 'https://github.com/username/ecommerce-platform',
-      demo: 'https://demo.ecommerce-platform.com'
-    },
-    stats: {
-      stars: 124,
-      contributors: 3,
-      users: '1.2k+'
-    },
-    completedDate: 'March 2024',
-    duration: '4 months'
+  "id": "1",
+  "title": "IntroLink",
+  "description": "A calm social platform designed to help introverts connect meaningfully through AI, forums, and journaling.",
+  "longDescription": "IntroLink is a full-stack social platform built to support introverts with features like AI-powered icebreaker chats, topic-based forums, mental health support, journaling tools, and safe interactions. It prioritizes minimalism, emotional well-being, and respectful community building.",
+  "image": introlink,
+  "technologies": ["React", "TypeScript", "Node.js", "MongoDB", "Tailwind CSS", "Vite", "OpenAI API"],
+  "category": "Full Stack",
+  "status": "In Progress",
+  "featured": true,
+  "links": {
+    "live": "https://introlink.vercel.app",
+    "github": "https://github.com/Shankzzz1/IntroLink",
+    "demo": "https://demo.introlink.vercel.app"
   },
-  {
-    id: '2',
-    title: 'Task Management App',
-    description: 'Collaborative task management application with real-time updates, team workspaces, and project tracking.',
-    longDescription: 'A modern task management solution designed for teams. Includes features like drag-and-drop task boards, real-time collaboration, time tracking, file attachments, and comprehensive project analytics.',
-    image: 'https://images.unsplash.com/photo-1611224923853-80b023f02d71?w=400&h=200&fit=crop',
-    technologies: ['Next.js', 'TypeScript', 'Prisma', 'Socket.io', 'MongoDB', 'Vercel'],
-    category: 'Web App',
-    status: 'Completed',
-    featured: true,
-    links: {
-      live: 'https://taskflow-app.com',
-      github: 'https://github.com/username/task-manager'
-    },
-    stats: {
-      stars: 89,
-      contributors: 2,
-      users: '800+'
-    },
-    completedDate: 'January 2024',
-    duration: '3 months'
+  "stats": {
+    "stars": 80,
+    "contributors": 1,
+    "users": "500+"
   },
-  {
-    id: '3',
-    title: 'Weather Dashboard',
-    description: 'Beautiful weather application with location-based forecasts, interactive maps, and weather alerts.',
-    longDescription: 'A comprehensive weather dashboard featuring current conditions, 7-day forecasts, weather maps, severe weather alerts, and historical data visualization. Built with performance and user experience in mind.',
-    image: 'https://images.unsplash.com/photo-1504608524841-42fe6f032b4b?w=400&h=200&fit=crop',
-    technologies: ['React', 'JavaScript', 'OpenWeather API', 'Chart.js', 'CSS3'],
-    category: 'Frontend',
-    status: 'Maintenance',
-    featured: false,
-    links: {
-      live: 'https://weather-dash.netlify.app',
-      github: 'https://github.com/username/weather-dashboard'
-    },
-    stats: {
-      stars: 45,
-      users: '500+'
-    },
-    completedDate: 'November 2023',
-    duration: '2 months'
+  "completedDate": "July 2025",
+  "duration": "3 months (ongoing)"
+},
+{
+  "id": "2",
+  "title": "Goggins Journal",
+  "description": "A digital journal inspired by David Goggins to track discipline, goals, and mental resilience.",
+  "longDescription": "Goggins Journal is a self-improvement platform that enables users to log daily habits, track physical and mental goals, and build resilience inspired by David Goggins' philosophy. Built using a modern full-stack setup with rich UI, daily prompts, progress tracking, and motivational analytics.",
+  "image": Goggin,
+  "technologies": ["React", "TypeScript", "Django", "Tailwind CSS", "Vite", "PostgreSQL"],
+  "category": "Full Stack",
+  "status": "Completed",
+  "featured": true,
+  "links": {
+    "live": "https://goggins-journal.vercel.app",
+    "github": "https://github.com/Shankzzz1/Goggins-Journal",
+    "demo": "https://demo.goggins-journal.vercel.app"
   },
-  {
-    id: '4',
-    title: 'Social Media Analytics',
-    description: 'Analytics dashboard for social media metrics with data visualization and automated reporting.',
-    longDescription: 'A powerful analytics platform that aggregates data from multiple social media platforms. Features include customizable dashboards, automated reports, competitor analysis, and AI-powered insights.',
-    image: 'https://images.unsplash.com/photo-1460925895917-afdab827c52f?w=400&h=200&fit=crop',
-    technologies: ['Vue.js', 'Python', 'Django', 'D3.js', 'PostgreSQL', 'Docker'],
-    category: 'Full Stack',
-    status: 'In Progress',
-    featured: true,
-    links: {
-      github: 'https://github.com/username/social-analytics',
-      demo: 'https://analytics-demo.com'
-    },
-    stats: {
-      stars: 67,
-      contributors: 4
-    },
-    completedDate: 'Expected May 2024',
-    duration: '6 months'
+  "stats": {
+    "stars": 35,
+    "contributors": 1,
+    "users": "80+"
   },
+  "completedDate": "August 2025",
+  "duration": "2 months (ongoing)"
+}
+,
+
   {
-    id: '5',
-    title: 'Mobile Fitness Tracker',
-    description: 'Cross-platform mobile app for fitness tracking with workout plans and progress visualization.',
-    longDescription: 'A comprehensive fitness tracking application built with React Native. Features include workout logging, progress tracking, custom workout plans, social features, and integration with wearable devices.',
-    image: 'https://images.unsplash.com/photo-1571019613454-1cb2f99b2d8b?w=400&h=200&fit=crop',
-    technologies: ['React Native', 'Expo', 'Firebase', 'Redux', 'TypeScript'],
-    category: 'Mobile',
-    status: 'Completed',
-    featured: false,
-    links: {
-      github: 'https://github.com/username/fitness-tracker',
-      demo: 'https://fitness-app-demo.com'
-    },
-    stats: {
-      stars: 156,
-      users: '2k+'
-    },
-    completedDate: 'September 2023',
-    duration: '5 months'
+  "id": "3",
+  "title": "BidWeb",
+  "description": "An online bidding platform enabling users to list and bid on products in real-time.",
+  "longDescription": "BidWeb is a web-based auction platform where users can register, list items for auction, and place bids in real-time. The system handles user authentication, bid validation, auction timers, and winner selection. Designed to simulate competitive online bidding environments.",
+  "image": Bidweb,
+  "technologies": ["React", "Node.js", "MongoDB", "Express.js", "Tailwind CSS", "Socket.IO"],
+  "category": "Full Stack",
+  "status": "In Progress",
+  "featured": true,
+  "links": {
+    "live": "https://bidweb.vercel.app",
+    "github": "https://github.com/Shankzzz1/BidWeb",
+    "demo": "https://bidweb.vercel.app"
   },
+  "stats": {
+    "stars": 25,
+    "contributors": 1,
+    "users": "150+"
+  },
+  "completedDate": "March 2024",
+  "duration": "1.5 months"
+},
   {
-    id: '6',
-    title: 'Code Snippet Manager',
-    description: 'Developer tool for organizing and sharing code snippets with syntax highlighting and tagging.',
-    longDescription: 'A productivity tool for developers to store, organize, and share code snippets. Features include syntax highlighting for 50+ languages, tagging system, search functionality, and team collaboration features.',
-    image: 'https://images.unsplash.com/photo-1555066931-4365d14bab8c?w=400&h=200&fit=crop',
-    technologies: ['React', 'Node.js', 'Express', 'MongoDB', 'Prism.js'],
-    category: 'Web App',
-    status: 'Completed',
-    featured: false,
-    links: {
-      live: 'https://snippetbox.dev',
-      github: 'https://github.com/username/snippet-manager'
-    },
-    stats: {
-      stars: 78,
-      users: '600+'
-    },
-    completedDate: 'August 2023',
-    duration: '3 months'
-  }
+  "id": "4",
+  "title": "COMSA Portal",
+  "description": "A student-teacher interaction platform for material sharing and collaboration.",
+  "longDescription": "Built using the MERN stack and Django, the COMSA Portal facilitates seamless interaction between students and teachers. It supports sharing study material, allocating projects, and collaborating in forums. SQLite is used for backend data handling.",
+  "image": comsa,
+  "technologies": ["React", "Node.js", "Django", "SQLite"],
+  "category": "Full Stack",
+  "status": "Completed",
+  "featured": false,
+  "links": {
+    "live": "https://comsa-portal.vercel.app",
+    "github": "https://github.com/Shankzzz1/COMSA-Portal",
+    "demo": "https://comsa-portal.vercel.app"
+  },
+  "stats": {
+    "stars": 50,
+    "contributors": 2,
+    "users": "100+"
+  },
+  "completedDate": "Jan 2024",
+  "duration": "2 months"
+},
+  {
+  "id": "5",
+  "title": "Portfolio",
+  "description": "Personal portfolio website showcasing my skills, projects, and contact info.",
+  "longDescription": "A responsive and elegant personal portfolio built with the MERN stack. It includes sections for about, projects, skills, and contact. Tailwind CSS ensures consistent design and responsiveness across devices.",
+  "image": portfolio,
+  "technologies": ["React", "Node.js", "MongoDB", "Express.js", "Tailwind CSS"],
+  "category": "Frontend",
+  "status": "Completed",
+  "featured": false,
+  "links": {
+    "live": "https://portfolio-shashank.vercel.app",
+    "github": "https://github.com/Shankzzz1/Portfolio",
+    "demo": "https://portfolio-shashank.vercel.app"
+  },
+  "stats": {
+    "stars": 40,
+    "contributors": 1,
+    "users": "100+"
+  },
+  "completedDate": "April 2024",
+  "duration": "1 month"
+},
+  {
+  "id": "6",
+  "title": "Cashflow",
+  "description": "A finance tracking app to monitor expenses and get insights.",
+  "longDescription": "Cashflow is a personal finance tracker that allows users to log income and expenses, visualize spending patterns through charts, and set savings goals. Built with the MERN stack and deployed on Render.",
+  "image": cashflow,
+  "technologies": ["React", "Node.js", "MongoDB", "Express.js", "Tailwind CSS"],
+  "category": "Full Stack",
+  "status": "Completed",
+  "featured": false,
+  "links": {
+    "live": "https://cashflow-render.vercel.app",
+    "github": "https://github.com/Shankzzz1/Cashflow",
+    "demo": "https://cashflow-render.vercel.app"
+  },
+  "stats": {
+    "stars": 30,
+    "contributors": 1,
+    "users": "200+"
+  },
+  "completedDate": "May 2024",
+  "duration": "1 month"
+}
+
 ];
 
 const getStatusColor = (status: Project['status']) => {
@@ -177,7 +195,7 @@ export default function ProjectsSection() {
   const otherProjects = projectsData.filter(project => !project.featured);
 
   return (
-    <section className="w-full max-w-7xl mx-auto p-6">
+    <section id='projects' className="w-full max-w-7xl mx-auto p-6">
       <div className="mb-8">
         <h2 className="text-3xl font-bold text-white mb-2 flex items-center gap-3">
           <FolderOpen className="w-8 h-8 text-gray-400" />
@@ -277,7 +295,7 @@ export default function ProjectsSection() {
                   <Button 
                     variant="outline" 
                     size="sm" 
-                    className="border-gray-600 text-gray-300 hover:bg-gray-800"
+                    className="border-gray-600 text-black hover:bg-gray-800"
                     asChild
                   >
                     <a href={project.links.github} target="_blank" rel="noopener noreferrer">
@@ -345,7 +363,7 @@ export default function ProjectsSection() {
 
                 <div className="flex gap-2">
                   {project.links.live && (
-                    <Button variant="outline" size="sm" className="border-gray-600 text-gray-300 hover:bg-gray-800 flex-1" asChild>
+                    <Button variant="outline" size="sm" className="border-gray-600 text-black hover:bg-gray-800 hover:text-white flex-1" asChild>
                       <a href={project.links.live} target="_blank" rel="noopener noreferrer">
                         <ExternalLink className="w-3 h-3 mr-1" />
                         Live
@@ -353,7 +371,7 @@ export default function ProjectsSection() {
                     </Button>
                   )}
                   {project.links.github && (
-                    <Button variant="outline" size="sm" className="border-gray-600 text-gray-300 hover:bg-gray-800 flex-1" asChild>
+                    <Button variant="outline" size="sm" className="border-gray-600 text-black hover:bg-gray-800 hover:text-white flex-1" asChild>
                       <a href={project.links.github} target="_blank" rel="noopener noreferrer">
                         <Github className="w-3 h-3 mr-1" />
                         Code

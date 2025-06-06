@@ -4,7 +4,7 @@ import profile from "@/Images/profile.jpg"
 
 const WelcomePage = () => {
   return (
-    <div className="min-h-screen bg-gray-950 relative overflow-hidden">
+    <div id='home' className="min-h-screen bg-gray-950 relative overflow-hidden">
       {/* Animated Background */}
       <div className="absolute inset-0">
         {/* Floating particles */}
@@ -98,19 +98,19 @@ const WelcomePage = () => {
               {/* Social Links */}
               <div className="flex space-x-6">
                 <a 
-                  href="#" 
+                  href="https://github.com/Shankzzz1" 
                   className="text-gray-500 hover:text-white transition-colors duration-300 hover:scale-110 transform"
                 >
                   <Github className="h-6 w-6" />
                 </a>
                 <a 
-                  href="#" 
+                  href="https://linkedin.com/in/shashank-gavale-041148261" 
                   className="text-gray-500 hover:text-white transition-colors duration-300 hover:scale-110 transform"
                 >
                   <Linkedin className="h-6 w-6" />
                 </a>
                 <a 
-                  href="#" 
+                  href="shashankmgavale2004@gmail.com" 
                   className="text-gray-500 hover:text-white transition-colors duration-300 hover:scale-110 transform"
                 >
                   <Mail className="h-6 w-6" />
