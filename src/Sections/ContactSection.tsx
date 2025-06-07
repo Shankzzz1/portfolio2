@@ -92,7 +92,7 @@ const quickActions = [
     title: 'View Portfolio',
     description: 'Explore my work samples',
     icon: <ExternalLink className="w-5 h-5" />,
-    url: 'https://portfolio.johndoe.dev',
+    url: 'https://portfolio2-seven-cyan.vercel.app/',
     primary: false
   }
 ];

@@ -118,7 +118,7 @@ const WelcomePage = () => {
                   <Linkedin className="h-6 w-6" />
                 </a>
                 <a 
-                  href="shashankmgavale2004@gmail.com" 
+                  href="mailto:shashankmgavale2004@gmail.com" 
                   className="text-gray-500 hover:text-white transition-colors duration-300 hover:scale-110 transform"
                 >
                   <Mail className="h-6 w-6" />
