@@ -10,7 +10,6 @@ import {
   Linkedin, 
   Twitter, 
   Globe, 
-  Calendar,
   Download,
   ExternalLink,
   Copy,

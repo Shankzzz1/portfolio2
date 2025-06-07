@@ -88,7 +88,7 @@ export default function EducationSection() {
       </div>
 
       <div className="space-y-6">
-        {educationData.map((edu, index) => (
+        {educationData.map((edu) => (
           <Card key={edu.id} className="bg-gray-900 border-gray-800 hover:border-gray-700 transition-all duration-300 hover:shadow-lg hover:shadow-gray-900/20">
             <CardHeader className="pb-4">
               <div className="flex flex-col sm:flex-row sm:items-center sm:justify-between gap-4">

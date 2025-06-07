@@ -76,7 +76,7 @@ export default function ExperienceSection() {
         <div className="absolute left-4 top-0 bottom-0 w-0.5 bg-gray-700 hidden md:block"></div>
         
         <div className="space-y-8">
-          {experienceData.map((exp, index) => (
+          {experienceData.map((exp) => (
             <div key={exp.id} className="relative">
               {/* Timeline dot */}
               <div className="absolute left-2 top-6 w-4 h-4 bg-gray-600 rounded-full border-4 border-gray-900 hidden md:block"></div>
