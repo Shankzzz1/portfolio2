@@ -70,7 +70,7 @@ const projectsData: Project[] = [
   "featured": true,
   "links": {
     "live": "https://goggins-journal.vercel.app",
-    "github": "https://github.com/Shankzzz1/Goggins-Journal",
+    "github": "https://github.com/Shankzzz1/Goggin-s-Journal",
     "demo": "https://demo.goggins-journal.vercel.app"
   },
   "stats": {
@@ -118,7 +118,7 @@ const projectsData: Project[] = [
   "featured": false,
   "links": {
     "live": "https://comsa-portal.vercel.app",
-    "github": "https://github.com/Shankzzz1/COMSA-Portal",
+    "github": "https://github.com/Shankzzz1/COMSA_Portal",
     "demo": "https://comsa-portal.vercel.app"
   },
   "stats": {
@@ -164,7 +164,7 @@ const projectsData: Project[] = [
   "featured": false,
   "links": {
     "live": "https://cashflow-render.vercel.app",
-    "github": "https://github.com/Shankzzz1/Cashflow",
+    "github": "https://github.com/Shankzzz1/Cashflow-main",
     "demo": "https://cashflow-render.vercel.app"
   },
   "stats": {
