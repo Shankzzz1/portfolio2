@@ -1,9 +1,11 @@
 import { Button } from '@/components/ui/button';
 import { ArrowRight, Github, Linkedin, Mail } from 'lucide-react';
 import profile from "@/Images/profile.jpg"
+import FadeInSection from "@/Sections/FadeInSection";
 
 const WelcomePage = () => {
   return (
+    <FadeInSection className="p-6  rounded-xl shadow-md">
     <div id='home' className="min-h-screen bg-gray-950 relative overflow-hidden">
       {/* Animated Background */}
       <div className="absolute inset-0">
@@ -78,6 +80,7 @@ const WelcomePage = () => {
 
               {/* Action Buttons */}
               <div className="flex flex-col sm:flex-row gap-4">
+                <a href='#projects'>
                 <Button 
                   size="lg" 
                   variant="outline" 
@@ -86,6 +89,10 @@ const WelcomePage = () => {
                   View My Work
                   <ArrowRight className="ml-2 h-4 w-4 group-hover:translate-x-1 transition-transform" />
                 </Button>
+                </a>
+                <a href="/resume.pdf"
+                download
+                >
                 <Button 
                   variant="outline" 
                   size="lg"
@@ -93,6 +100,7 @@ const WelcomePage = () => {
                 >
                   Download CV
                 </Button>
+                </a>
               </div>
 
               {/* Social Links */}
@@ -152,6 +160,7 @@ const WelcomePage = () => {
         }
       `}</style>
     </div>
+    </FadeInSection>
   );
 };
 

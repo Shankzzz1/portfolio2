@@ -1,6 +1,8 @@
 import { Card, CardContent, CardHeader, CardTitle } from '@/components/ui/card';
 import { Badge } from '@/components/ui/badge';
 import { GraduationCap, Calendar, MapPin } from 'lucide-react';
+import FadeInSection from "@/Sections/FadeInSection";
+
 
 interface Education {
   id: string;
@@ -75,6 +77,7 @@ const educationData: Education[] = [
 
 export default function EducationSection() {
   return (
+    <FadeInSection className="p-6  rounded-xl shadow-md">
     <section id='education' className="w-full max-w-4xl mx-auto p-6">
       <div className="mb-8">
         <h2 className="text-3xl font-bold text-white mb-2 flex items-center gap-3">
@@ -148,5 +151,6 @@ export default function EducationSection() {
         ))}
       </div>
     </section>
+    </FadeInSection>
   );
 }

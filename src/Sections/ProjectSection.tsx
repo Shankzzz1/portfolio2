@@ -8,6 +8,7 @@ import comsa from "@/Images/comsa.png"
 import portfolio from "@/Images/portfolio.png"
 import Bidweb from "@/Images/Bidweb.png"
 import cashflow from "@/Images/cashflow.png"
+import FadeInSection from "@/Sections/FadeInSection";
 
 interface Project {
   id: string;
@@ -195,6 +196,7 @@ export default function ProjectsSection() {
   const otherProjects = projectsData.filter(project => !project.featured);
 
   return (
+        <FadeInSection className="p-6  rounded-xl shadow-md">
     <section id='projects' className="w-full max-w-7xl mx-auto p-6">
       <div className="mb-8">
         <h2 className="text-3xl font-bold text-white mb-2 flex items-center gap-3">
@@ -385,5 +387,6 @@ export default function ProjectsSection() {
         </div>
       </div>
     </section>
+    </FadeInSection>
   );
 }

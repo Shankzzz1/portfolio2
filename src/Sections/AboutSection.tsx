@@ -1,6 +1,7 @@
 import { Card, CardContent } from '@/components/ui/card';
 import { Badge } from '@/components/ui/badge';
 import { User, Code, Coffee, MapPin } from 'lucide-react';
+import FadeInSection from "@/Sections/FadeInSection";
 
 const AboutSection = () => {
     const skills = [
@@ -18,6 +19,7 @@ const AboutSection = () => {
  
 
   return (
+    <FadeInSection className="p-6  rounded-xl shadow-md">
     <section id='about' className="py-20 px-6">
       <div className="max-w-6xl mx-auto">
         <div className="text-center mb-16">
@@ -132,6 +134,7 @@ const AboutSection = () => {
         </div>
       </div>
     </section>
+    </FadeInSection>
   );
 };
 

@@ -1,6 +1,7 @@
 import { Card, CardContent, CardHeader, CardTitle } from '@/components/ui/card';
 import { Badge } from '@/components/ui/badge';
 import { Briefcase, Calendar, MapPin, ChevronRight } from 'lucide-react';
+import FadeInSection from "@/Sections/FadeInSection";
 
 interface Experience {
   id: string;
@@ -60,6 +61,7 @@ const experienceData: Experience[] = [
 
 export default function ExperienceSection() {
   return (
+        <FadeInSection className="p-6  rounded-xl shadow-md">
     <section className="w-full max-w-5xl mx-auto p-6">
       <div className="mb-8">
         <h2 className="text-3xl font-bold text-white mb-2 flex items-center gap-3">
@@ -159,5 +161,6 @@ export default function ExperienceSection() {
         </div>
       </div>
     </section>
+    </FadeInSection>
   );
 }
