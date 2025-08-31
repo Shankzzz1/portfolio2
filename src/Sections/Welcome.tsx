@@ -1,12 +1,12 @@
 import { Button } from '@/components/ui/button';
 import { ArrowRight, Github, Linkedin, Mail } from 'lucide-react';
-import profile from "@/Images/profile.jpg"
+import profile from "@/Images/profile.png"
 import FadeInSection from "@/Sections/FadeInSection";
 
 const WelcomePage = () => {
   return (
     <FadeInSection className="p-6  rounded-xl shadow-md">
-    <div id='home' className="min-h-screen bg-gray-950 relative overflow-hidden">
+    <div id='home' className="min-h-screen pt-16 bg-gray-950 relative overflow-hidden">
       {/* Animated Background */}
       <div className="absolute inset-0">
         {/* Floating particles */}
