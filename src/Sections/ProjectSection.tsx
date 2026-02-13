@@ -3,7 +3,7 @@ import { Badge } from '@/components/ui/badge';
 import { Button } from '@/components/ui/button';
 import { FolderOpen, ExternalLink, Github, Calendar, Users, Star } from 'lucide-react';
 import Goggin from "@/Images/Goggin.png"
-import introlink from "@/Images/Introlink.png"
+import productivepals from "@/Images/productivepals.png"
 import comsa from "@/Images/comsa.png"
 import portfolio from "@/Images/portfolio.png"
 import Bidweb from "@/Images/Bidweb.png"
@@ -35,29 +35,30 @@ interface Project {
 }
 
 const projectsData: Project[] = [
-  {
+{
   "id": "1",
-  "title": "IntroLink",
-  "description": "A calm social platform designed to help introverts connect meaningfully through AI, forums, and journaling.",
-  "longDescription": "IntroLink is a full-stack social platform built to support introverts with features like AI-powered icebreaker chats, topic-based forums, mental health support, journaling tools, and safe interactions. It prioritizes minimalism, emotional well-being, and respectful community building.",
-  "image": introlink,
-  "technologies": ["React", "TypeScript", "Node.js", "MongoDB", "Tailwind CSS", "Vite", "OpenAI API"],
+  "title": "Productive Pals",
+  "description": "A collaborative Pomodoro timer that helps teams stay focused and productive together in real time.",
+  "longDescription": "Productive Pals is a real-time collaborative Pomodoro application built with Socket.IO for synchronized timers, allowing friends, study groups, and teams to focus together. It includes features like shared focus sessions, task management, and productivity stats to encourage accountability and teamwork.",
+  "image": productivepals,
+  "technologies": ["React", "TypeScript", "Node.js", "Socket.IO", "Tailwind CSS", "Vite"],
   "category": "Full Stack",
-  "status": "In Progress",
+  "status": "Completed",
   "featured": true,
   "links": {
-    "live": "https://introlink.vercel.app",
-    "github": "https://github.com/Shankzzz1/IntroLink",
-    "demo": "https://demo.introlink.vercel.app"
+    "live": "https://productivepals.vercel.app",
+    "github": "https://github.com/Shankzzz1/Productive-Pals",
+    "demo": "https://demo.productivepals.vercel.app"
   },
   "stats": {
-    "stars": 80,
+    "stars": 50,
     "contributors": 1,
-    "users": "500+"
+    "users": "200+"
   },
-  "completedDate": "July 2025",
-  "duration": "3 months (ongoing)"
+  "completedDate": "December 2025",
+  "duration": "2 months (ongoing)"
 },
+
 {
   "id": "2",
   "title": "Goggins Journal",
